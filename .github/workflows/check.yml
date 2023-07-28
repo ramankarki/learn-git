@@ -1,0 +1,14 @@
+name: check haneko
+
+on:
+  release:
+    types: [published]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: first step
+        run: |
+          echo "check haneko"
