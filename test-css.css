@@ -1,0 +1,41 @@
+body {
+  max-width: 600px;
+  margin: auto;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+h1 {
+  color: red;
+}
+
+.list {
+  border: 5px solid skyblue;
+  height: 70px;
+  /* transform: translate(0, 0); */
+  position: relative;
+}
+
+.popover {
+  position: absolute;
+  inset: 0;
+  bottom: initial;
+  height: 200px;
+  background-color: palegreen;
+  z-index: 99;
+  border: 1px solid black;
+}
+
+.none {
+  display: none;
+}
+
+.offclick {
+  position: fixed;
+  inset: 0;
+  background: #00000000;
+  pointer-events: none;
+}

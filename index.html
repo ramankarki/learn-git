@@ -3,34 +3,50 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <link rel="stylesheet" href="styles.css" />
+    <title>Overlay Scrollbars Example</title>
   </head>
   <body>
-    <h1>test handeko</h1>
+    <!-- <div style="height: 1000px"></div> -->
+    <div class="container">
+      <div class="component">
+        <div class="scroll">
+          <div class="content">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. ...</p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facilis
+            tempora tenetur ut dolore alias porro delectus. Ab consequuntur
+            aperiam repellendus placeat corrupti culpa adipisci enim, vitae cum
+            a eaque, autem expedita quam? Saepe iure minus labore, dicta dolore
+            asperiores quae. Laborum repellat praesentium inventore officiis
+            excepturi quis minus sint cupiditate assumenda earum in, a
+            repudiandae nisi odit aut, esse exercitationem ipsa est pariatur
+            dolorum numquam facilis cumque? Pariatur distinctio nulla ipsam
+            repudiandae? Iste provident debitis ipsum expedita quibusdam eos
+            deserunt, cumque ipsam ut inventore eius laborum? Rem consequatur
+            quis quibusdam, amet itaque quae sit exercitationem rerum eius
+            corrupti ratione magni ipsa laborum consequuntur corporis facilis
+            provident voluptatum aspernatur cupiditate placeat. Accusamus
+            aperiam, molestias cum eaque earum aliquam officiis ipsum rerum id
+            voluptatibus harum ab! Eos laborum laboriosam aperiam et labore,
+            asperiores delectus, ea saepe harum mollitia consequatur.
+            Accusantium, et nam modi adipisci quis laudantium ab obcaecati iste
+            minima illum mollitia architecto quam beatae, aperiam animi dolore
+            nisi magni magnam repudiandae molestiae reprehenderit culpa nostrum
+            nemo eveniet. Quisquam labore cupiditate officia, ipsa fugiat
+            perferendis quidem quas atque alias, repellat similique doloremque
+            facere adipisci pariatur aut mollitia quia tempore repudiandae
+            corrupti illo? Delectus minima recusandae illum voluptatum qui est,
+            excepturi ratione nobis?
+          </div>
+        </div>
+        <div class="track">
+          <div class="wrapper">
+            <div class="thumb"></div>
+          </div>
+        </div>
+      </div>
+    </div>
 
-    <script>
-      async function main() {
-        const response = await fetch('http://localhost:9000/api/bot', {
-          method: 'POST',
-          headers: {
-            'Content-Type': 'application/json',
-          },
-          body: JSON.stringify({ prompt: 'what is blue whale' }),
-        })
-        const reader = response.body
-          .pipeThrough(new TextDecoderStream())
-          .getReader()
-        let content = ''
-        while (true) {
-          const { value, done } = await reader.read()
-          if (done) break
-          console.log({ value })
-          const chunks = value.split('data: ')
-          chunks.map((c) => (content += c.trimEnd()))
-        }
-        console.log(content)
-      }
-      main()
-    </script>
+    <script src="script.js"></script>
   </body>
 </html>

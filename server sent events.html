@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>test handeko</h1>
+
+    <script>
+      async function main() {
+        const response = await fetch('http://localhost:9000/api/bot', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify({ prompt: 'what is javascript' }),
+        })
+        const reader = response.body
+          .pipeThrough(new TextDecoderStream())
+          .getReader()
+        let content = ''
+        while (true) {
+          const { value, done } = await reader.read()
+          if (done) break
+          const chunks = value.split('data: ')
+          chunks.map((c) => (content += c.trimEnd()))
+        }
+        console.log(content)
+      }
+      main()
+    </script>
+  </body>
+</html>
