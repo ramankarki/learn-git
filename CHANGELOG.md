@@ -1,3 +1,15 @@
+# [2.0.0](https://github.com/ramankarki/learn-git-nginx/compare/v1.0.0...v2.0.0) (2024-08-19)
+
+
+### Features
+
+* new version ([4e89c38](https://github.com/ramankarki/learn-git-nginx/commit/4e89c384d9b2acd2c9c655f6448cfba663ed9c8d))
+
+
+### BREAKING CHANGES
+
+* purano kunai code hataye
+
 # 1.0.0 (2024-08-19)
 
 
