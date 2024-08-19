@@ -1,3 +1,11 @@
+# [1.0.0-beta.2](https://github.com/ramankarki/learn-git-nginx/compare/v1.0.0-beta.1...v1.0.0-beta.2) (2024-08-19)
+
+
+### Bug Fixes
+
+* auto update package.json ([d5f1398](https://github.com/ramankarki/learn-git-nginx/commit/d5f13983e8dcb7e33b7ee6934f80f2c3067c1f56))
+* use @semantic-release/exec to auto update package.json version ([8a2c54f](https://github.com/ramankarki/learn-git-nginx/commit/8a2c54fb09a5d453c6755630c7dc601ca7918018))
+
 # 1.0.0-beta.1 (2024-08-19)
 
 ### Bug Fixes
