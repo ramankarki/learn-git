@@ -5,8 +5,8 @@ on:
   push:
     branches:
       - main
-      - beta
-      - alpha
+      - beta/*
+      - alpha/*
 
 jobs:
   release:
