@@ -3,9 +3,11 @@
  */
 module.exports = {
 	branches: [
-		'main',
-		{ name: 'beta', prerelease: true },
-		{ name: 'alpha', prerelease: true },
+		{ name: 'main' }, // Production releases
+		{ name: 'alpha', prerelease: 'alpha' }, // Default alpha branch
+		{ name: 'beta', prerelease: 'beta' }, // Default beta branch
+		{ name: 'alpha/*', prerelease: true }, // All alpha branches, e.g., alpha/feature-X
+		{ name: 'beta/*', prerelease: true }, // All beta branches, e.g., beta/feature-Y
 	],
 	plugins: [
 		'@semantic-release/commit-analyzer',
