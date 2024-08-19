@@ -1,3 +1,10 @@
+# [1.0.0-alpha.5](https://github.com/ramankarki/learn-git-nginx/compare/v1.0.0-alpha.4...v1.0.0-alpha.5) (2024-08-19)
+
+
+### Features
+
+* new feat ([9e0d307](https://github.com/ramankarki/learn-git-nginx/commit/9e0d3072f7003605ea5d56682bcc38f47a74a0d9))
+
 # [1.0.0-alpha.4](https://github.com/ramankarki/learn-git-nginx/compare/v1.0.0-alpha.3...v1.0.0-alpha.4) (2024-08-19)
 
 
