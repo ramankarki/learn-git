@@ -1,3 +1,15 @@
+# [1.0.0-alpha.2](https://github.com/ramankarki/learn-git-nginx/compare/v1.0.0-alpha.1...v1.0.0-alpha.2) (2024-08-19)
+
+
+### Bug Fixes
+
+* bug fix gariyo ([9a4f91d](https://github.com/ramankarki/learn-git-nginx/commit/9a4f91dff8aecdfe527761475dc13c71c390af44))
+
+
+### Features
+
+* naya feature ayo ([88ef74b](https://github.com/ramankarki/learn-git-nginx/commit/88ef74bd01a52d0aeb4648ab1b9c9854042f6eac))
+
 # 1.0.0-alpha.1 (2024-08-19)
 
 
