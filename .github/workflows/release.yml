@@ -3,9 +3,9 @@ name: Release
 on:
   push:
     branches:
-      - prod
-      - stage
-      - dev
+      - main
+      - beta
+      - alpha
 
 jobs:
   release:

@@ -3,9 +3,9 @@
  */
 module.exports = {
 	branches: [
-		'prod',
-		{ name: 'stage', prerelease: true },
-		{ name: 'dev', prerelease: true },
+		'main',
+		{ name: 'beta', prerelease: true },
+		{ name: 'alpha', prerelease: true },
 	],
 	plugins: [
 		'@semantic-release/commit-analyzer',
